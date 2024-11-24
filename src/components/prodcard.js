@@ -14,7 +14,7 @@ export default function ProdCard({ product }) {
                 <h3 className="product-name">
                     {product.prodName.toUpperCase()}
                 </h3>
-                <p className="product-price">{product.price} DH</p>
+                <p className="product-price">{product.price} $</p>
                 <Link to={`/prodetails/${product.id}`} className="view_details">
                     DETAILS
                 </Link>

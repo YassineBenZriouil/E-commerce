@@ -71,7 +71,7 @@ export default function ViewProd() {
                         <thead>
                             <tr>
                                 <th>Product Name</th>
-                                <th>Price (DH)</th>
+                                <th>Price ($)</th>
                                 <th>Description</th>
                                 <th>Quantity</th>
                                 <th>Actions</th>

@@ -2,7 +2,6 @@ import React from "react";
 import "./style/App.css";
 
 import Header from "./static/header";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/home";
@@ -20,15 +19,22 @@ import Prodetails from "./components/prodetails";
 import Cart from "./components/cart";
 
 import Orders from "./components/orders";
+import About from "./components/about";
 
 export default function App() {
-    const COMPANY = "Jumia";
+    const COMPANY = "Vexo"; // This is where your company name is defined
+
     return (
         <>
             <Router>
                 <Header company={COMPANY} />
                 <div className="App">
                     <Routes>
+                        {/* Pass the company prop to the About component */}
+                        <Route
+                            path="/about"
+                            element={<About company={COMPANY} />}
+                        />
                         <Route path="/" element={<Home />} />
                         <Route path="/register" element={<Register />} />
                         <Route path="/login" element={<Login />} />

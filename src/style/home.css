@@ -74,7 +74,6 @@
     border: 1px solid var(--text-color);
     padding: 3px;
 }
-
 .categories_container p {
     background-color: var(--text-color);
     color: var(--background-color);

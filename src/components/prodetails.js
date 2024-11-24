@@ -95,7 +95,7 @@ export default function Prodetails() {
                         <h1 className="product-name">
                             {productDetails.prodName.toUpperCase()}
                         </h1>
-                        <p>Price : {productDetails.price} DH</p>
+                        <p>Price : {productDetails.price} $</p>
                         <p>Category : {categoryName || "Loading..."}</p>
                         <p className="product-field">
                             In Stock : {productDetails.quantity}

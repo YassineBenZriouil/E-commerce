@@ -153,7 +153,7 @@ export default function Cart() {
                                         />
                                     </td>
                                     <td>{product.name}</td>
-                                    <td>{product.price} DH</td>
+                                    <td>{product.price} $</td>
                                 </tr>
                             ))}
                         </tbody>
@@ -173,7 +173,7 @@ export default function Cart() {
                         </button>
                     </div>
                     <div className="total-amount">
-                        <h3>Total Amount: {totalAmount} DH</h3>
+                        <h3>Total Amount: {totalAmount} $</h3>
                     </div>
                 </>
             ) : (
