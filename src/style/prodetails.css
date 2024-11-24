@@ -1,0 +1,90 @@
+.product_details_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--text-color);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    border: 2px solid var(--background-color);
+    box-shadow: 0 4px 20px var(--primary-color);
+    box-sizing: border-box;
+}
+
+.product-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    width: 100%;
+}
+
+.product_info p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
+
+.addToCart {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.addToCart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px var(--primary-color);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .product_card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .product-image {
+        max-width: 50%;
+    }
+
+    .product_info {
+        max-width: 50%;
+        align-items: flex-start;
+        text-align: left;
+    }
+}

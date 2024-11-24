@@ -1,0 +1,118 @@
+.main_Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-bottom: 2px solid var(--primary-color);
+    height: fit-content;
+}
+
+.prt_name {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    text-decoration: none;
+}
+
+.norm_list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    font-size: larger;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.sub_nav_open {
+    height: auto;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    color: var(--text-color);
+    opacity: 1;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.sub_nav_closed {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.brg_btn {
+    display: none;
+    font-weight: 900;
+}
+.hidden-list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    font-size: larger;
+    text-align: center;
+    background-color: var(--text-color);
+    margin-top: 0px;
+}
+
+.list_item,
+.react_link {
+    cursor: pointer;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.list_item:hover {
+    transform: scale(1.2);
+}
+
+li i {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.search_bar_hidden {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+@media screen and (max-width: 600px) {
+    .brg_btn {
+        display: block;
+        cursor: pointer;
+        border: none;
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+    .main_Header {
+        padding: 10px 10px;
+    }
+
+    .norm_list {
+        display: none;
+    }
+
+    .prt_name {
+        font-size: 15px;
+    }
+
+    .search_bar {
+        display: none;
+    }
+
+    .search_bar_hidden {
+        display: flex;
+        gap: 10px;
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+}

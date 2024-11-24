@@ -1,0 +1,109 @@
+.home-container {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    flex-direction: column;
+}
+
+.wecome_categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 75%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.search_input {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 6.5px 5px;
+    border: 1px solid var(--background-color);
+}
+
+.search_input::placeholder {
+    color: var(--background-color); /* Change this to your desired color */
+}
+
+.search_bar input:focus {
+    outline: none;
+}
+
+.categories_product {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carousel_product {
+    width: 100%;
+}
+
+.categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 10px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    margin: 0px 20px;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.categories_container select {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+    padding: 3px;
+}
+
+.categories_container p {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-weight: bolder;
+}
+
+.categories_container button,
+.view_details {
+    padding: 10px 20px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.categories_container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+    .categories_product {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/*loading animation uner*/

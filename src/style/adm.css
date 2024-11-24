@@ -1,0 +1,192 @@
+/*adminopt*/
+
+.adm_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: var(--background-color);
+    color: var(--background-color);
+}
+
+.adm_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--text-color);
+    color: var(--text-color);
+    border-radius: 18px;
+    box-shadow: 0px 0px 15px var(--primary-color);
+    padding: 20px;
+    border: 3px solid var(--primary-color);
+}
+
+.adm_title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    background-color: var(--text-color);
+}
+
+.btns_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--text-color);
+}
+
+.adm_link {
+    background-color: var(--text-color);
+}
+
+.adm_btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.adm_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+    .btns_div {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .adm_container {
+        width: 100%;
+    }
+}
+
+/*addProd*/
+
+.adm_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--text-color);
+}
+
+.adm_label {
+    background-color: var(--text-color);
+    font-size: 1rem;
+    text-align: left;
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.adm_inp {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+}
+
+.adm_inp:focus {
+    outline: none;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.adm_btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.adm_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px var(--primary-color);
+}
+
+/*View all*/
+
+.adm_table {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 5px var(--primary-color);
+}
+
+.adm_table th,
+.adm_table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.adm_table th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.adm_table td {
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+button i {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .adm_table {
+        display: flex;
+        border: none;
+    }
+
+    .adm_table thead {
+        display: none;
+    }
+
+    .adm_table tbody {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 100%;
+        background-color: var(--text-color);
+    }
+
+    .adm_table tbody tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid var(--text-color);
+        border-radius: 5px;
+        width: 100%;
+        background-color: var(--background-color);
+    }
+
+    .adm_table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid var(--text-color);
+    }
+}
+
+/*Update Prode File */
