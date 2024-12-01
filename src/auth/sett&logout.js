@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { auth, db } from "./firebase";
 import { getDoc, doc } from "firebase/firestore";
 import Animations from "./../static/animations";
-export default function Logout() {
+
+export default function Logout(props) {
     const [userDetails, setUserDetails] = useState({});
     const navigate = useNavigate();
     const [isadmin, setIsadmin] = useState(false);
@@ -52,7 +53,7 @@ export default function Logout() {
         <Animations>
             <div className="auth_container">
                 <div className="auth_div">
-                    <h3 className="auth_title">Welcome to Jumia</h3>
+                    <h3 className="auth_title">Welcome to {props.company}</h3>
                     <h5 className="auth_label">
                         {userDetails.userName || "Guest"}
                     </h5>

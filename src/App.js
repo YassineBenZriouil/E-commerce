@@ -22,7 +22,7 @@ import Orders from "./components/orders";
 import About from "./components/about";
 
 export default function App() {
-    const COMPANY = "Vexo"; // This is where your company name is defined
+    const COMPANY = process.env.REACT_APP_COMPANY_NAME;
 
     return (
         <>

@@ -27,7 +27,7 @@ export default function Header(props) {
         <>
             <div className="main_Header">
                 <Link onClick={handleClick} className="prt_name" to="/">
-                    {props.company.toUpperCase()}
+                    {props.company}
                 </Link>
 
                 <ul className="norm_list">

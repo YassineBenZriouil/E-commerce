@@ -10,11 +10,11 @@ export default function Footer(props) {
         <>
             <div className="footer_container">
                 <Link className="footer_link" to="/">
-                    {props.company.toUpperCase()}
+                    {props.company}
                 </Link>{" "}
                 <p className="footer_text">
-                    © {props.company.toUpperCase()} {new Date().getFullYear()}{" "}
-                    All rights reserved.
+                    © {props.company} {new Date().getFullYear()} All rights
+                    reserved.
                 </p>
                 <Theme />
             </div>
